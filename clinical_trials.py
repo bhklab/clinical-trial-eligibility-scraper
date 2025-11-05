@@ -27,7 +27,7 @@ async def eligibility_scraping():
             display.start()
 
         browser = await uc.start(
-            headless=False,
+            headless=True,
             # user_data_dir= os.getcwd() + "/profile", # by specifying it, it won't be automatically cleaned up when finished
             # browser_executable_path="/path/to/some/other/browser",
             # browser_args=['--some-browser-arg=true', '--some-other-option'],
