@@ -61,7 +61,7 @@ async def eligibility_scraping():
         # Output to csv
         df = pd.DataFrame.from_dict(eligibility_data, orient="index")
         df.to_csv(
-            f"output/run_{str(datetime.now()).replace(' ', '_').replace(':', '_').replace('.', '_')}.csv",
+            f"output/run_{str(datetime.now()).replace(' ', '_').replace(':', '_').replace('.', '_').replace('-', '_')}.csv",
             index=True,
         )
 
